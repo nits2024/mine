@@ -1,0 +1,35 @@
+POST https://my-service.com/action
+
+Headers:
+//user defined headers
+Content-type: application/json
+
+POST body:
+
+{
+  "id": "3d8c71fc-3e27-468f-a218-7c5912bff979",
+    "result": {
+    "source": "Test",
+    "resolvedQuery": "Hi, my name is Sam!",
+    "action": "flight.book",
+    "actionIncomplete": false,
+    "parameters": {
+      "Departure": ""
+    },
+    
+    "metadata": {
+      "intentId": "3d8c71fc-3e27-468f-a218-7c5912bff979",
+      "webhookUsed": "true",
+      "intentName": "greetings"
+    },
+    "fulfillment": {
+      "speech": "Nice to meet you, Sam!"
+    },
+    "score": 1
+  },
+  "status": {
+    "code": 200,
+    "errorType": "success"
+  },
+  "sessionId": "3d8c71fc-3e27-468f-a218-7c5912bff979"
+}
